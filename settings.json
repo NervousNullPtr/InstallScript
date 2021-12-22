@@ -1,0 +1,14 @@
+{
+    "editor.fontSize": 22,
+    "editor.fontFamily": "'Fira Code', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "workbench.colorTheme": "Monokai Neon",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorStyle": "block",
+    "terminal.external.linuxExec": "kitty",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "workbench.iconTheme": "material-icon-theme",
+    "security.workspace.trust.untrustedFiles": "open"
+}
