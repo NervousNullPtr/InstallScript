@@ -1,5 +1,5 @@
 #!bin/bash
-sudo -i;
+pacman -S sudo git fakeroot;
 # Installing Chaotic-AUR
 pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com;
 pacman-key --lsign-key FBA220DFC880C036;
@@ -7,15 +7,13 @@ pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst
 printf "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf;
 # End Chaotic-AUR
 pacman -Syu;
-pacman -S git fakeroot;
 git clone https://aur.archlinux.org/yay.git;
 cd yay;
 makepkg -si;
 cd ..;
 rm -rf yay;
-exit;
 yay -Syu;
-yay -S nautilus discord code brave-bin fish ttf-fira-code xorg-xrandr vim nano exfat-utils kitty polybar code-marketplace picom-git rustup texmaker texlive-most signal-desktop feh dmenu dunst cronie alsa-utils easyeffects btop flameshot curl keepasxc cmatrix neofetch;
+yay -S nautilus discord code brave-bin fish ttf-fira-code i3-gaps xorg-xrandr vim nano exfat-utils kitty polybar code-marketplace picom-git rustup texmaker texlive-most signal-desktop feh dmenu dunst cronie alsa-utils easyeffects btop flameshot curl keepasxc cmatrix neofetch;
 
 code --install-extension dan-c-underwood.arm;
 code --install-extension icrawl.discord-vscode;
