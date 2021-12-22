@@ -20,7 +20,7 @@
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar.
-font pango:Fira Code 10
+font pango:DejaVu Sans Mono 0
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -284,3 +284,4 @@ client.focused_inactive #00000000 #00000000    #FFFFFF #00000000 #00000000
 client.urgent           #00000000 #00000000    #a16b1c #000000   #8166E8
 
 ##STOP THEMING
+for_window [class="^.*"] border pixel 1
