@@ -1,10 +1,10 @@
 #!bin/bash
-pacman -S sudo git fakeroot;
+sudo pacman -S sudo git fakeroot gcc make;
 # Installing Chaotic-AUR
-pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com;
-pacman-key --lsign-key FBA220DFC880C036;
-pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst';
-printf "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf;
+sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com;
+sudo pacman-key --lsign-key FBA220DFC880C036;
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst';
+sudo printf "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf;
 # End Chaotic-AUR
 pacman -Syu;
 git clone https://aur.archlinux.org/yay.git;
