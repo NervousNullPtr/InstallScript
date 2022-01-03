@@ -52,13 +52,13 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = fira code:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-1 = Noto Color Emoji:pixelsize=16:style=Regular:scale=11;1
+font-2 = unifont:fontformat=truetype:size=8:antialias=true:scale=11;1
 
 modules-left =i3
 modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = alsa backlight memory cpu temperature date powermenu
+modules-right = pulseaudio memory cpu date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -252,7 +252,8 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+#format-prefix = " "
+format-prefix = "CPU "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -260,7 +261,8 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+#format-prefix = " "
+format-prefix = "RAM "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
 label = %percentage_used%%
@@ -305,25 +307,25 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
-date =
-date-alt = " %Y-%m-%d"
+date = "%d.%m.%Y"
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = "%H:%M:%S"
 
-format-prefix = 
+format-prefix = "🕑"
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
+format-prefix-font = 1
 
-label = %date% %time%
+
+label = " %time%  %date%"
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = 🔈 %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
@@ -338,11 +340,11 @@ bar-volume-foreground-4 = #55aa55
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
-bar-volume-indicator = |
+bar-volume-indicator = ┃
 bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
+bar-volume-fill = ═
+bar-volume-fill-font = 1
+bar-volume-empty = ═
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
@@ -433,16 +435,16 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = ⏻
 label-open-foreground = ${colors.secondary}
-label-close =  cancel
+label-close = "❌ Cancel"
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
-menu-0-0 = reboot
+menu-0-0 = ⭮  Reboot
 menu-0-0-exec = menu-open-1
-menu-0-1 = power off
+menu-0-1 = ⏼ Power off
 menu-0-1-exec = menu-open-2
 
 menu-1-0 = cancel
