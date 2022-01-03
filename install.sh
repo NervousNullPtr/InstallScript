@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #!/usr/bin/bash
 sudo pacman -S opendoas git fakeroot;
+=======
+#!bin/bash
+sudo pacman -S sudo git fakeroot gcc make;
+>>>>>>> 5bc767dcef85065eecb7401db55ebbe721c8afb3
 # Installing Chaotic-AUR
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com;
 sudo pacman-key --lsign-key FBA220DFC880C036;
