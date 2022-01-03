@@ -198,11 +198,7 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-
-
-bindsym Print exec flameshot gui
-
-
+bindsym Print exec --no-startup-id flameshot gui
 
 # 12A] reload the configuration file
 bindsym $mod+Shift+c reload
@@ -285,3 +281,8 @@ client.urgent           #00000000 #00000000    #a16b1c #000000   #8166E8
 
 ##STOP THEMING
 for_window [class="^.*"] border pixel 1
+
+bindsym XF86AudioPlay exec --no-startup-id playerctl play
+bindsym XF86AudioPause exec --no-startup-id playerctl pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
