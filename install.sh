@@ -13,7 +13,7 @@ makepkg -si;
 cd ..;
 rm -rf yay;
 yay -Syu;
-yay -S nautilus wget playerctl code qelectrotech brave-bin fish ttf-fira-code i3-gaps xorg-xrandr vim nano exfat-utils kitty polybar code-marketplace picom-git rustup texmaker texlive-most signal-desktop feh dmenu dunst alsa-utils pipewire pipewire-pulse btop flameshot curl keepasxc cmatrix neofetch;
+yay -S nautilus starship wget playerctl code qelectrotech brave-bin fish ttf-fira-code i3-gaps xorg-xrandr vim nano exfat-utils kitty polybar code-marketplace picom-git rustup texmaker texlive-most signal-desktop feh dmenu dunst alsa-utils pipewire pipewire-pulse btop flameshot curl keepasxc cmatrix neofetch;
 yay -Rns NetworkManager;
 
 code --install-extension dan-c-underwood.arm;
@@ -49,7 +49,8 @@ curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/picom
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/config.fish -o ~/.config/fish/config.fish;
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/polybar-config -o ~/.config/polybar/config;
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/layout.sh -o ~/layout.sh;
-curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/doas.conf -o /etc/doas.conf;
+doas curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/doas.conf -o /etc/doas.conf;
+curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/starship.toml -o ~/.config/starship.toml;
 chmod +x ~/layout.sh;
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/settings.json -o ~/.config/Code\ -\ OSS/User/settings.json;
 
