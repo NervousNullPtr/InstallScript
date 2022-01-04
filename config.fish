@@ -1,5 +1,6 @@
 set fish_greeting
+set SHELL fish
 if status is-interactive
-neofetch    
+    neofetch    
 end
-starship init fish | source
+    starship init fish | source

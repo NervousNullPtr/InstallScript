@@ -53,6 +53,7 @@ sudo curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/starship.toml -o ~/.config/starship.toml;
 chmod +x ~/layout.sh;
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/settings.json -o ~/.config/Code\ -\ OSS/User/settings.json;
+curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/neofetch.conf -o ~/.config/neofetch/config.conf;
 
 yay --sudo doas --save;
 yay -Rns sudo;
