@@ -49,7 +49,7 @@ curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/picom
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/config.fish -o ~/.config/fish/config.fish;
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/polybar-config -o ~/.config/polybar/config;
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/layout.sh -o ~/layout.sh;
-doas curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/doas.conf -o /etc/doas.conf;
+sudo curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/doas.conf -o /etc/doas.conf;
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/starship.toml -o ~/.config/starship.toml;
 chmod +x ~/layout.sh;
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/settings.json -o ~/.config/Code\ -\ OSS/User/settings.json;
