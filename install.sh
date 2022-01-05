@@ -13,7 +13,7 @@ makepkg -si;
 cd ..;
 rm -rf yay;
 yay -Syu;
-yay -S nautilus starship wget playerctl code qelectrotech brave-bin fish ttf-fira-code i3-gaps xorg-xrandr vim nano exfat-utils kitty polybar code-marketplace picom-git rustup texmaker texlive-most signal-desktop feh dmenu dunst alsa-utils pipewire pipewire-pulse btop flameshot curl keepasxc cmatrix neofetch;
+yay -S nautilus dotnet-sdk starship wget playerctl code qelectrotech brave-bin fish ttf-fira-code i3-gaps xorg-xrandr vim nano exfat-utils kitty polybar code-marketplace picom-git rustup texmaker texlive-most signal-desktop feh dmenu dunst alsa-utils pipewire pipewire-pulse btop flameshot curl keepasxc cmatrix neofetch;
 yay -Rns NetworkManager;
 
 code --install-extension dan-c-underwood.arm;
@@ -23,6 +23,8 @@ code --install-extension ryolambertdev.monokai-neon;
 code --install-extension platformio.platformio-ide;
 code --install-extension matklad.rust-analyzer;
 code --install-extension be5invis.toml;
+code --install-extension ms-dotnettools.csharp;
+code --install-extension jchannon.csharpextensions;
 
 mkdir ~/Coding;
 mkdir ~/Coding/C++;
