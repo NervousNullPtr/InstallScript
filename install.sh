@@ -26,6 +26,7 @@ code --install-extension be5invis.toml;
 code --install-extension ms-dotnettools.csharp;
 code --install-extension jchannon.csharpextensions;
 code --install-extension vadimcn.vscode-lldb;
+code --install-extension serayuzgur.crates;
 
 mkdir ~/Coding;
 mkdir ~/Coding/C++;
