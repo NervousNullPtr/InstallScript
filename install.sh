@@ -25,6 +25,7 @@ code --install-extension matklad.rust-analyzer;
 code --install-extension be5invis.toml;
 code --install-extension ms-dotnettools.csharp;
 code --install-extension jchannon.csharpextensions;
+code --install-extension vadimcn.vscode-lldb;
 
 mkdir ~/Coding;
 mkdir ~/Coding/C++;
