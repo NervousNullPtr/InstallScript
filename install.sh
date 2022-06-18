@@ -43,8 +43,7 @@ git clone https://github.com/LibRapid/LibRapidRust ~/Coding/Rust/LibRapidRust;
 git clone https://github.com/NervousNullPtr/Types-Header ~/Coding/C++/Types-Header;
 git clone https://github.com/NervousNullPtr/installscript ~/Coding/Shell/installscript;
 
-wget https://wallpaperaccess.com/download/5k-hd-415851 -o ~/Bilder/Wallpaper.jpg;
-curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/QElectroTech.conf -o ~/.config/QElectroTech/QElectroTech.conf;
+curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/Wallpaper.jpg -o ~/Bilder/Wallpaper.jpg;
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/btop.conf -o ~/.config/btop/btop.conf;
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/kitty.conf -o ~/.config/kitty/kitty.conf;
 curl https://raw.githubusercontent.com/NervousNullPtr/InstallScript/master/i3-config -o ~/.config/i3/config;
